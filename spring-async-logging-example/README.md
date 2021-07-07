@@ -34,8 +34,8 @@ spring boot에서 logback을 이용하여 비동기식 로깅하는 방법에 �
   - neverBlock : 큐가 다 찼을 떄, 메시지를 넣을지 말지 결정. true로 하면 메시지 넣는것을 기다리지 않고 날려버리지만 속도는 빨라짐
 
 ## Related files
-[logback-local.xml](../spring-logging-example/src/main/resources/logback-local.xml)   
-[application.properites](../spring-logging-example/src/main/resources/application.properties)
+[logback-local.xml](../spring-async-logging-example/src/main/resources/logback-local.xml)   
+[application.properites](../spring-async-logging-example/src/main/resources/application.properties)
 
 ## Pros and Cons of asynchronous logging
 - 장점
