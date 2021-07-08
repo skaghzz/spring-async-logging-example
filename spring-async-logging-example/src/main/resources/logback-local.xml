@@ -26,18 +26,17 @@
         <neverBlock>true</neverBlock>
     </appender>
 
-    <!-- TRACE level로 ASYNC_FILE appender로 로그를 출력하도록 한다. -->
-    <root level="TRACE">
-        <appender-ref ref="ASYNC_FILE"/>
-    </root>
-
     <!-- sync logging on console -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${LOG_PATTERN}</pattern>
         </encoder>
     </appender>
-    <root level="TRACE">
+
+    <!-- debug level로 콘솔에 로그를 출력하도록 한다. -->
+    <!-- debug level로 ASYNC_FILE appender로 로그를 출력하도록 한다. -->
+    <root level="debug">
+        <appender-ref ref="ASYNC_FILE"/>
         <appender-ref ref="STDOUT"/>
     </root>
 </configuration>
