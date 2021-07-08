@@ -23,9 +23,17 @@ public class TestContoller {
 
     @RequestMapping(value = "/test")
     public ResponseEntity<Void> test() {
+        logger.trace("start");
+        logger.debug("start");
         logger.info("start");
+        logger.warn("start");
+        logger.error("start");
         testService.testLog();
+        logger.trace("end");
+        logger.debug("end");
         logger.info("end");
+        logger.warn("end");
+        logger.error("end");
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

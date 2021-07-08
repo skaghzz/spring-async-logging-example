@@ -9,7 +9,10 @@ public class TestService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public void testLog() {
-        logger.info("start");
-        logger.info("end");
+        logger.trace("logging");
+        logger.debug("logging");
+        logger.info("logging");
+        logger.warn("logging");
+        logger.error("logging");
     }
 }
